@@ -1,26 +1,26 @@
-ï»¿---
+---
 layout: post
-category: å‰å°æŠ€æœ¯
+category: Ç°Ì¨¼¼Êõ
 tags: [jquery,checkbox,select,radio]
 ---
 {% include JB/setup %}
 
-jqueryå¯¹å¤šé€‰æŒ‰é’®(checkbox),å•é€‰æŒ‰é’®(radio),ä¸‹æ‹‰é€‰æ‹©æ¡†(select)çš„æ“ä½œåœ¨ä½¿ç”¨æ—¶ç»å¸¸ä¼šé—å¿˜ï¼Œæ•…åœ¨æ­¤å¯¹å¸¸ç”¨æ“ä½œåšä¸€ä¸ªæ€»ç»“ã€‚ 
+jquery¶Ô¶àÑ¡°´Å¥(checkbox),µ¥Ñ¡°´Å¥(radio),ÏÂÀ­Ñ¡Ôñ¿ò(select)µÄ²Ù×÷ÔÚÊ¹ÓÃÊ±¾­³£»áÒÅÍü£¬¹ÊÔÚ´Ë¶Ô³£ÓÃ²Ù×÷×öÒ»¸ö×Ü½á¡£ 
 
-## jqueryæ“ä½œcheckbox
+## jquery²Ù×÷checkbox
 
-### å¯¹å·²é€‰ä¸­æŒ‰é’®çš„è·å–
+### ¶ÔÒÑÑ¡ÖĞ°´Å¥µÄ»ñÈ¡
 
 	var jqobj = $("input[name=xxx]:checked");
 
-## jqueryæ“ä½œradio
+## jquery²Ù×÷radio
 
-### å¯¹å·²é€‰ä¸­æŒ‰é’®çš„è·å–
+### ¶ÔÒÑÑ¡ÖĞ°´Å¥µÄ»ñÈ¡
 
 	var jqobj = $("input[name=xxx]:checked");
 	
-## jqueryæ“ä½œselect
+## jquery²Ù×÷select
 
-### è·å–é€‰ä¸­é¡¹çš„å€¼
+### »ñÈ¡Ñ¡ÖĞÏîµÄÖµ
 
 	var selval = $("select[name=xxx]").val();
