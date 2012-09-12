@@ -23,7 +23,7 @@ This website is created with Jekyll. [Other Jekyll websites](https://github.com/
 
 ### What does Jekyll Do?
 
-Jekyll is a ruby gem you install on your local system.
+Jekyll is a ruby gem you install on your local system. ºº×Ö
 Once there you can call `jekyll --server` on a directory and provided that directory
 is setup in a way jekyll expects, it will do magic stuff like parse markdown/textile files, 
 compute categories, tags, permalinks, and construct your pages from layout templates and partials.
