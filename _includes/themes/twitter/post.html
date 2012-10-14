@@ -1,5 +1,25 @@
 <div class="page-header">
-  <h1>{{ page.title }} <small>Supporting tagline</small></h1>
+  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+  <div style="height: 12px; line-height: 12px; margin-top: 8px;" class="artinfobar">
+<div style="float:left;" class="group-img"></div><div style="float: left; margin-left: 5px; height: 12px;">
+{% unless page.categories == empty %}    
+ {% for category in page.categories %} 
+        <a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category }}-ref">{{ category | join: "/" }}</a></li>&nbsp;
+    {% endfor %}    
+  {% endunless %}
+
+</div>
+<div style="float:left;margin-left:15px;" class="tag-img"></div><div style="float: left; margin-left: 5px; height: 12px;">
+ {% unless page.tags == empty %}    
+ {% for tag in page.tags %} 
+    	<a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }}</a>&nbsp;
+    {% endfor %}    
+  {% endunless %}
+</div>
+<div style="float:left;margin-left:15px;" class="date-img"></div>
+<div style="float: left; margin-left: 5px; height: 12px;">{{ page.date | date_to_long_string }}</div>
+</div>
+  
 </div>
 
 <div class="row">
@@ -25,16 +45,5 @@
     {% include JB/comments %}
   </div>
   
-  <div class="span4">
-    <h4>Published</h4>
-    <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
-
-  {% unless page.tags == empty %}
-    <h4>Tags</h4>
-    <ul class="tag_box">
-    {% assign tags_list = page.tags %}
-    {% include JB/tags_list %}
-    </ul>
-  {% endunless %}  
-  </div>
+ 
 </div>
