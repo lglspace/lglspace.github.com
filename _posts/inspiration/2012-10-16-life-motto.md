@@ -2,7 +2,7 @@
 layout: post
 title : 生活告诫
 tags : [转载, 励志]
-categories: [psychology]
+categories: [Inspirational Essay]
 ---
 
 **第一：不要认为停留在心灵的舒适区域内是可以原谅的。**

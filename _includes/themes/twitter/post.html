@@ -1,7 +1,9 @@
+ 
 <div class="page-header">
   <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
   <div style="height: 12px; line-height: 12px; margin-top: 8px;" class="artinfobar">
 <div style="float:left;" class="group-img"></div><div style="float: left; margin-left: 5px; height: 12px;">
+
 {% unless page.categories == empty %}    
  {% for category in page.categories %} 
         <a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category }}-ref">{{ category | join: "/" }}</a></li>&nbsp;
@@ -17,7 +19,7 @@
   {% endunless %}
 </div>
 <div style="float:left;margin-left:15px;" class="date-img"></div>
-<div style="float: left; margin-left: 5px; height: 12px;">{{ page.date | date_to_long_string }}</div>
+<div style="float: left; margin-left: 5px; height: 12px;">{{ page.date | date:"%Y-%m-%d"  }}</div>
 </div>
   
 </div>
